@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +43,59 @@
 <body>
 
     <!-- Navbar section -->
-    <nav>
+    <nav class="bg-pink">
+
+        <!-- Actual nav components -->
+        <div class="max-w-screen-lg mx-auto flex items-center justify-between py-7">
+            <!-- logo section -->
+            <div class="flex items-center">
+                <img class="mr-3" src="c1-assets/logo-header.png" alt="">
+                <h1 class="font-sora text-2xl text-[#111111]">Browse<span class="text-btn">4</span>Pets</h1>
+            </div>
+
+            <!-- link section -->
+            <div>
+                <ul class="flex gap-8">
+                    <li class="font-sora text-xl text-[#111111]">Find a pet</li>
+                    <li class="font-sora text-xl text-[#111111]">Breeds</li>
+                    <li class="font-sora text-xl text-[#111111]">Contact us</li>
+                </ul>
+            </div>
+
+            <!-- login section -->
+            <div class="flex items-center  gap-4">
+                <!-- icon section -->
+                <div class="flex gap-4">
+                    <svg width="21.752197" height="24.002750" viewBox="0 0 21.7522 24.0028" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M21.56 13.65L19.66 6.82C19.11 4.82 17.9 3.06 16.23 1.82C14.55 0.59 12.52 -0.06 10.44 0C8.36 0.05 6.36 0.8 4.76 2.12C3.15 3.44 2.04 5.26 1.59 7.29L0.11 13.91C-0.05 14.64 -0.04 15.4 0.13 16.13C0.29 16.86 0.63 17.54 1.09 18.12C1.56 18.71 2.16 19.18 2.83 19.5C3.51 19.82 4.25 19.99 5 19.99L6.11 19.99C6.34 21.12 6.95 22.14 7.84 22.87C8.74 23.6 9.86 24 11.01 24C12.16 24 13.28 23.6 14.17 22.87C15.07 22.14 15.68 21.12 15.91 19.99L16.75 19.99C17.52 19.99 18.28 19.81 18.97 19.47C19.66 19.13 20.26 18.63 20.73 18.02C21.19 17.41 21.51 16.69 21.66 15.93C21.8 15.18 21.77 14.4 21.56 13.65ZM11.01 21.99C10.39 21.99 9.79 21.8 9.28 21.44C8.78 21.08 8.4 20.58 8.19 19.99L13.83 19.99C13.62 20.58 13.24 21.08 12.73 21.44C12.23 21.8 11.63 21.99 11.01 21.99ZM19.14 16.81C18.86 17.18 18.5 17.48 18.08 17.68C17.67 17.89 17.21 17.99 16.75 17.99L5 17.99C4.55 17.99 4.1 17.89 3.7 17.7C3.29 17.5 2.94 17.22 2.66 16.87C2.37 16.52 2.18 16.11 2.07 15.67C1.97 15.24 1.97 14.78 2.07 14.34L3.54 7.73C3.89 6.13 4.77 4.7 6.03 3.66C7.29 2.63 8.86 2.04 10.49 2C12.12 1.95 13.72 2.46 15.04 3.43C16.35 4.4 17.3 5.78 17.74 7.35L19.64 14.19C19.76 14.64 19.78 15.1 19.7 15.56C19.61 16.01 19.42 16.44 19.14 16.81Z"
+                            fill="#111111" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+
+                    <svg width="24.019653" height="24.019722" viewBox="0 0 24.0197 24.0197" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M23.73 22.32L17.77 16.35C19.39 14.36 20.19 11.82 20 9.26C19.81 6.7 18.64 4.31 16.73 2.58C14.83 0.86 12.33 -0.07 9.76 0C7.19 0.06 4.75 1.11 2.93 2.93C1.11 4.75 0.06 7.19 0 9.76C-0.07 12.33 0.86 14.83 2.58 16.73C4.31 18.64 6.7 19.81 9.26 20C11.82 20.19 14.36 19.39 16.35 17.77L22.32 23.73C22.51 23.92 22.76 24.02 23.02 24.01C23.29 24.01 23.54 23.91 23.72 23.72C23.91 23.54 24.01 23.29 24.01 23.02C24.02 22.76 23.92 22.51 23.73 22.32ZM10.03 18.03C8.44 18.03 6.9 17.56 5.58 16.68C4.27 15.8 3.24 14.55 2.64 13.09C2.03 11.63 1.87 10.02 2.18 8.47C2.49 6.91 3.25 5.49 4.37 4.37C5.49 3.25 6.91 2.49 8.47 2.18C10.02 1.87 11.63 2.03 13.09 2.64C14.55 3.24 15.8 4.27 16.68 5.58C17.56 6.9 18.03 8.44 18.03 10.03C18.02 12.15 17.18 14.18 15.68 15.68C14.18 17.18 12.15 18.02 10.03 18.03Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+
+                <!-- Login -->
+                <div class="flex gap-3">
+                    <h1 class="font-sora text-xl text-[#111111] px-7 py-2 border-2 rounded-lg border-btn">Login</h1>
+                    <h1 class="font-sora text-xl text-[#111111] px-7 py-2 rounded-lg bg-btn">Register</h1>
+                </div>
+            </div>
+        </div>
 
     </nav>
 
@@ -51,11 +104,12 @@
 
     </main>
 
-     <!-- footer section -->
+    <!-- footer section -->
     <footer>
 
     </footer>
 
-    
+
 </body>
+
 </html>
