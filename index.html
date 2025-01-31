@@ -46,15 +46,18 @@
     <nav class="bg-pink">
 
         <!-- Actual nav components -->
-        <div class="max-w-screen-lg mx-auto flex items-center justify-between py-7">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between py-7">
             <!-- logo section -->
-            <div class="flex items-center">
+            <div class="flex items-center mx-auto md:mx-0 justify-between md:justify-normal w-[90%] md:w-auto">
                 <img class="mr-3" src="c1-assets/logo-header.png" alt="">
-                <h1 class="font-sora text-2xl text-[#111111]">Browse<span class="text-btn">4</span>Pets</h1>
+                <h1 class="font-sora text-2xl text-[#111111] hidden md:block">Browse<span class="text-btn">4</span>Pets</h1>
+
+                <!-- hambuger icon -->
+                 <img class="w-[22px] md:hidden" src="c1-assets/hamb-icon.png" alt="">
             </div>
 
             <!-- link section -->
-            <div>
+            <div class="hidden md:block">
                 <ul class="flex gap-8">
                     <li class="font-sora text-xl text-[#111111]">Find a pet</li>
                     <li class="font-sora text-xl text-[#111111]">Breeds</li>
@@ -63,7 +66,7 @@
             </div>
 
             <!-- login section -->
-            <div class="flex items-center  gap-4">
+            <div class="md:flex md:items-center  gap-4 hidden md:inline">
                 <!-- icon section -->
                 <div class="flex gap-4">
                     <svg width="21.752197" height="24.002750" viewBox="0 0 21.7522 24.0028" fill="none"
